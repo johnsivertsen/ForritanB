@@ -37,3 +37,27 @@ Gjarna commit+push leypandi (kotan skal tó kompilera)
 Implementera HUND
 
 https://programmering.systime.dk/?id=c382
+
+## EX006: Algoritme til sum
+
+Loys punkt 2.
+
+https://programmering.systime.dk/?id=c759
+
+## EX007: Glædelig jul og godt nytår
+
+https://programmering.systime.dk/?id=c1095
+
+## EX008: Skudår
+
+Loys punkt 2 og 3.
+
+https://programmering.systime.dk/?id=c1096
+
+## EX009: Investering med fast rente
+
+https://programmering.systime.dk/?id=c1092
+
+## EX010: Gæt et tal mellem 1 og 100
+
+https://programmering.systime.dk/?id=c300
