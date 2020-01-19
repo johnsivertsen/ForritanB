@@ -5,7 +5,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class Form implements IForm {
+public class LayoutedForm implements IForm {
     private JFrame frame;
     private JTextField textField;
     private JTextArea textArea;
@@ -14,10 +14,18 @@ public class Form implements IForm {
     private ActionListener button2Press;
     private ActionListener button3Press;
 
-    public Form() {
+    private JPanel panelNorth;
+    private JScrollPane scrollPane;
+
+    public LayoutedForm() {
         frame = new JFrame();
         frame.setSize(620, 480);
-        frame.setLayout(null);
+        LayoutManager l = new BorderLayout();
+        frame.setLayout(l);
+
+        panelNorth = new JPanel();
+        panelNorth.setLayout(new FlowLayout());
+        frame.add(panelNorth, BorderLayout.NORTH);
 
         textField = new JTextField();
         textArea = new JTextArea();
@@ -49,30 +57,39 @@ public class Form implements IForm {
             }
         };
 
-        AddTextField(new Rectangle(10, 10, 600, 25));
-        AddButton("Næsti tími", new Rectangle(10, 35, 100, 25), button1Press);
-        AddButton("Et", new Rectangle(120, 35, 100, 25), button2Press);
-        AddButton("Gang", new Rectangle(230, 35, 100, 25), button3Press);
-        AddTextArea(new Rectangle(10, 65, 600, 400));
+        AddTextField();
+        AddButton("Næsti tími", button1Press);
+        AddButton("Et", button2Press);
+        AddButton("Gang", button3Press);
+        AddTextArea();
         frame.setVisible(true);
     }
 
-    private void AddTextField(Rectangle position) {
-        textField.setBounds(position);
-        frame.add(textField);
+    private void AddTextField() {
+        Dimension d = new Dimension();
+        d.width = 300;
+        d.height = 25;
+        textField.setPreferredSize(d);
+        panelNorth.add(textField);
     }
 
-    private void AddButton(String caption, Rectangle rectangle, ActionListener actionListener) {
+    private void AddButton(String caption, ActionListener actionListener) {
         JButton button = new JButton();
         button.setText(caption);
-        button.setBounds(rectangle);
         button.addActionListener(actionListener);
-        frame.add(button);
+        panelNorth.add(button);
     }
 
-    private void AddTextArea(Rectangle position) {
-        textArea.setBounds(position);
-        frame.add(textArea);
+    private void AddTextArea() {
+        Font font = new Font(Font.MONOSPACED, Font.PLAIN, 12);
+        textArea.setFont(font);
+        textArea.setForeground(Color.LIGHT_GRAY);
+        textArea.setBackground(Color.DARK_GRAY);
+        textArea.setCaretColor(Color.LIGHT_GRAY);
+
+        scrollPane = new JScrollPane(textArea);
+        scrollPane.setVerticalScrollBarPolicy ( ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS );
+        frame.add(scrollPane, BorderLayout.CENTER);
     }
 
     private void Log(String text) {
