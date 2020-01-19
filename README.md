@@ -4,7 +4,7 @@ Vælkomin til ForritanB!
 
 ## Undirvísingartilfar
 
-Vit nýta bókina XX sum grundarlag fyri undirvísingini.
+Vit nýta bókina [Programmering](https://programmering.systime.dk) í undirvísingini.
 
 ## Amboð
 
@@ -24,5 +24,5 @@ Kann downloadast frá [jetbrains.com](https://www.jetbrains.com/idea/download/#s
 
 ## Uppgávur
 
-Sí [Uppgávur](UPPGÁVUR.md) fyri lista av lýsing av uppgávum ið vit loysa og gjøgnumganga í skúlaárinum.
+Sí [uppgávur](UPPGÁVUR.md) fyri lista av lýsing av uppgávum ið vit loysa og gjøgnumganga í skúlaárinum.
 
