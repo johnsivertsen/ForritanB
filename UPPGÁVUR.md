@@ -61,3 +61,26 @@ https://programmering.systime.dk/?id=c1092
 ## EX010: Gæt et tal mellem 1 og 100
 
 https://programmering.systime.dk/?id=c300
+
+## EX011: Fakultet
+
+https://programmering.systime.dk/?id=c1098
+
+## EX012: Palindrom
+
+https://programmering.systime.dk/?id=c847
+
+Ger punkt 2 nágreiniliga sum lýst
+
+## EX013: Needle in Haystack
+
+https://programmering.systime.dk/?id=c1088
+
+## EX014: Søg i Array
+
+https://programmering.systime.dk/?id=c1089
+
+## EX015: Sortér Array
+
+https://programmering.systime.dk/?id=c1090
+
