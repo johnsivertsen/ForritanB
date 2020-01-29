@@ -84,3 +84,33 @@ https://programmering.systime.dk/?id=c1089
 
 https://programmering.systime.dk/?id=c1090
 
+## EX016: Beregning af største fælles divisor
+
+https://programmering.systime.dk/?id=c742
+
+## EX017: Algoritme til at finde personnavn i liste
+
+https://programmering.systime.dk/?id=c757
+
+### EX018: Ger keylistener til JTextField
+
+Tá ið ein av keylistener metodunum verður triggað, broyt bakgrundsfarvuna á text field komponentinum til okkurt random.
+
+```
+textField.addKeyListener(new KeyListener() {
+            @Override
+            public void keyTyped(KeyEvent e) {
+                Log("keyTyped triggered");
+            }
+
+            @Override
+            public void keyPressed(KeyEvent e) {
+                Log("keyPressed triggered");
+            }
+
+            @Override
+            public void keyReleased(KeyEvent e) {
+                Log("keyReleased triggered");
+            }
+        }
+```
