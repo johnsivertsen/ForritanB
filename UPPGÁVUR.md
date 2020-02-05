@@ -84,6 +84,8 @@ https://programmering.systime.dk/?id=c1089
 
 https://programmering.systime.dk/?id=c1090
 
+Nýt t.d. Bubble Sort: https://en.wikipedia.org/wiki/Bubble_sort
+
 ## EX016: Beregning af største fælles divisor
 
 https://programmering.systime.dk/?id=c742
