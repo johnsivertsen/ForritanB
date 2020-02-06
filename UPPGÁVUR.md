@@ -116,3 +116,20 @@ textField.addKeyListener(new KeyListener() {
             }
         }
 ```
+
+# Hanging Man
+
+## Ger getGUI 
+
+Funktión ið tekur loysn (string) og git (lista av teknum) sum input og returnerar strong við spæl GUI í stíl við:
+
+```
+Loysn: *o**h**o**i
+Git: i,o,j,e,h,l,w
+Skeiv git: 4
+```
+
+Funktión signatur:
+```function String getGUI(String solution, ArrayList<Character> guesses)```
+
+
