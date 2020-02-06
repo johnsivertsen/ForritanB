@@ -130,6 +130,6 @@ Skeiv git: 4
 ```
 
 Funktión signatur:
-```function String getGUI(String solution, ArrayList<Character> guesses)```
+```static String getGUI(String solution, ArrayList<Character> guesses)```
 
 
