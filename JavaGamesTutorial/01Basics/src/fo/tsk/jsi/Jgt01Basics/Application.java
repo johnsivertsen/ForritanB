@@ -11,9 +11,12 @@ public class Application extends JFrame {
 
     private void initUI() {
 
-        add(new Board());
+        //add(new Board());
+        //add(new DonutBoard());
+        add(new ImageBoard());
 
-        setSize(250, 200);
+        //setSize(250, 200);
+        pack();
 
         setTitle("Application");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
