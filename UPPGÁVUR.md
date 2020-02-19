@@ -158,3 +158,9 @@ Hjálpifunktiónir til at konvertera millum ArrayList og Set:
     }
     
 ```
+
+## Eyka
+
+* Ger so at GuessGenerator lesur frá txt fílu frá diskinum
+* Ger tað gjørligt at broyta tal av max gitum
+* Vís bara skeiv git undir "Git"
