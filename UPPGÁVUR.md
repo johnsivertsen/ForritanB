@@ -164,3 +164,4 @@ Hjálpifunktiónir til at konvertera millum ArrayList og Set:
 * Ger so at GuessGenerator lesur frá txt fílu frá diskinum
 * Ger tað gjørligt at broyta tal av max gitum
 * Vís bara skeiv git undir "Git"
+* Ger so at steðgað spæl kann takast uppaftur aftaná restart
