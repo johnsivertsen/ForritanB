@@ -165,3 +165,12 @@ Hjálpifunktiónir til at konvertera millum ArrayList og Set:
 * Ger tað gjørligt at broyta tal av max gitum
 * Vís bara skeiv git undir "Git"
 * Ger so at steðgað spæl kann takast uppaftur aftaná restart
+
+
+## EX019: Telefon klassi
+
+Ger ein klassa sum umboðar eina telefon.
+Skal innihalda Framleiðara, Model, Skermstødd, EigaraNavn
+Ger 3 objektir.
+Goym í einum ArrayList.
+Loopa gjøgnum listan og skriva upplýsingarnr út. 
