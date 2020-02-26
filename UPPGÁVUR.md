@@ -170,7 +170,11 @@ Hjálpifunktiónir til at konvertera millum ArrayList og Set:
 ## EX019: Telefon klassi
 
 Ger ein klassa sum umboðar eina telefon.
+
 Skal innihalda Framleiðara, Model, Skermstødd, EigaraNavn
+
 Ger 3 objektir.
+
 Goym í einum ArrayList.
+
 Loopa gjøgnum listan og skriva upplýsingarnr út. 
