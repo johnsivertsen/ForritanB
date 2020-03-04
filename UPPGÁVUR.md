@@ -217,7 +217,7 @@ Metodur: framleið() ið returnar ein bil. // Sí https://www.w3schools.com/java
 
 Ger 3 framleiðari objektir.
 
-Skift "new Car()" køllini út við t.d. bmw.framleið() køll.
+Skift "new Car()" køllini út við t.d. bmw.framleið(), volvo.framleið() køll.
 
 ### Eyka 
 
