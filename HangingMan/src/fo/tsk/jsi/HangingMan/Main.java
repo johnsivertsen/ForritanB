@@ -25,19 +25,19 @@ public class Main {
                     gameState = GameState.IN_PROGRESS;
                     break;
                 case IN_PROGRESS:
-                    System.out.println(guiBuilder.getGUI(solution, guessed));
+                    System.out.println(guiBuilder.getGuiPublic(solution, guessed));
                     guessed = guessAsker.GuessACharacter(guessed);
                     gameState = gameOverChecker.CheckIfGameIsOver(solution, guessed);
                     break;
                 case GAME_OVER_WIN:
-                    System.out.println(guiBuilder.getGUI(solution, guessed));
+                    System.out.println(guiBuilder.getGuiPublic(solution, guessed));
                     System.out.println("TIL LUKKU!! - TÚ HEVUR VUNNIÐ :)");
                     System.out.println("Trýst á ENTER fyri at spæla umaftur.");
                     scanner.nextLine();
                     gameState = GameState.INIT;
                     break;
                 case GAME_OVER_LOST:
-                    System.out.println(guiBuilder.getGUI(solution, guessed));
+                    System.out.println(guiBuilder.getGuiPublic(solution, guessed));
                     System.out.println("GAME OVER!! - TÚ TAPTI :(");
                     System.out.println("Loysnin var " + solution);
                     System.out.println("Trýst á ENTER fyri at spæla umaftur.");

@@ -4,6 +4,8 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
 
 public class LayoutedForm implements IForm {
     private JFrame frame;
@@ -70,6 +72,22 @@ public class LayoutedForm implements IForm {
         d.width = 300;
         d.height = 25;
         textField.setPreferredSize(d);
+        textField.addKeyListener(new KeyListener() {
+            @Override
+            public void keyTyped(KeyEvent e) {
+                Log("keyTyped triggered");
+            }
+
+            @Override
+            public void keyPressed(KeyEvent e) {
+                Log("keyPressed triggered");
+            }
+
+            @Override
+            public void keyReleased(KeyEvent e) {
+                Log("keyReleased triggered");
+            }
+        });
         panelNorth.add(textField);
     }
 

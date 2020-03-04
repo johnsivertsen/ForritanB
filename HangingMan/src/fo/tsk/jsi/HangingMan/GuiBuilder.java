@@ -1,7 +1,6 @@
 package fo.tsk.jsi.HangingMan;
 
-import java.util.Set;
-import java.util.SortedSet;
+import java.util.*;
 
 public class GuiBuilder {
     private final WrongGuessesCounter _wrongGuessesCounter;
@@ -9,114 +8,53 @@ public class GuiBuilder {
         _wrongGuessesCounter = wrongGuessesCounter;
     }
 
-    public String getGUI(String solution, Set<Character> guessed) {
+    /*static String getGUI(String solution, ArrayList<Character> guesses) {
+        return "Loysn: *o**h**o**i\n" +
+                "Git: i,o,j,e,h,l,w\n" +
+                "Skeiv git: 4";
+    }*/
+
+    public String getGuiPublic(String solution, Set<Character> guessed) {
+        return GuiBuilder.getGUI(solution, ConvertSetToArrayList(guessed));
+    }
+
+    static String getGUI(String solution, ArrayList<Character> guesses) {
         String solutionMasked = "";
 
-        int wrongGuesses = _wrongGuessesCounter.Count(solution, guessed);
-
-        for (int i = 0; i < solution.length(); i++) {
-            //String s = solution.substring(i, i+1).toUpperCase();
-            Character c = solution.charAt(i);
-            if (guessed.contains(Character.toUpperCase(c)) || guessed.contains(Character.toLowerCase(c))) {
-                solutionMasked = solutionMasked + c;
+        for (int i = 0; i<solution.length(); i++) {
+            char cUpperCase = Character.toUpperCase(solution.charAt(i));
+            char cLowerCase = Character.toLowerCase(solution.charAt(i));
+            if (guesses.contains(cUpperCase) || guesses.contains(cLowerCase)) {
+                solutionMasked = solutionMasked + solution.charAt(i);
             } else {
                 solutionMasked = solutionMasked + "*";
             }
         }
 
-        String hangingMan = "";
+        WrongGuessesCounter wgc = new WrongGuessesCounter();
+        int wrongGuesses = wgc.Count(solution, ConvertArrayListToSet(guesses));
 
-        switch (wrongGuesses) {
-            case 0: hangingMan = "                \n" +
-                                 "                \n" +
-                                 "                \n" +
-                                 "                \n" +
-                                 "                \n" +
-                                 "                \n" +
-                                 "                \n" +
-                                 "                \n" +
-                                 "                ";
-                break;
-            case 1: hangingMan = "                \n" +
-                    "                \n" +
-                    "                \n" +
-                    "                \n" +
-                    "                \n" +
-                    "                \n" +
-                    "                \n" +
-                    "     /\\         \n" +
-                    "    /  \\         ";
-                break;
-            case 2: hangingMan = "                \n" +
-                    "                \n" +
-                    "      |         \n" +
-                    "      |         \n" +
-                    "      |         \n" +
-                    "      |         \n" +
-                    "      |         \n" +
-                    "     /\\         \n" +
-                    "    /  \\         ";
-                break;
-            case 3: hangingMan = "                \n" +
-                    "      -------   \n" +
-                    "      |         \n" +
-                    "      |         \n" +
-                    "      |         \n" +
-                    "      |         \n" +
-                    "      |         \n" +
-                    "     /\\         \n" +
-                    "    /  \\         ";
-                break;
-            case 4: hangingMan = "                \n" +
-                    "      -------   \n" +
-                    "      |     |   \n" +
-                    "      |     o   \n" +
-                    "      |    /|\\  \n" +
-                    "      |          \n" +
-                    "      |          \n" +
-                    "     /\\         \n" +
-                    "    /  \\         ";
-                break;
-            case 5: hangingMan = "                \n" +
-                    "      -------   \n" +
-                    "      |     |   \n" +
-                    "      |     o   \n" +
-                    "      |    /|\\  \n" +
-                    "      |     |   \n" +
-                    "      |    / \\  \n" +
-                    "     /\\         \n" +
-                    "    /  \\         ";
-                break;
-            case 6:
-            case 7:
-            case 8:
-            case 9:
-            default:
+
+        return "Loysn: " + solutionMasked+"\n" +
+                "Git: "+guesses.toString()+"\n" +
+                "Skeiv git: " + wrongGuesses;
+
+    }
+
+    static ArrayList<Character> ConvertSetToArrayList(Set<Character> characterSet) {
+        ArrayList<Character> result = new ArrayList();
+        Iterator<Character> iterator = characterSet.iterator();
+        while (iterator.hasNext()) {
+            result.add(iterator.next());
         }
+        return result;
+    }
 
-        String template =
-                "--------------------------------------------\n" +
-                "-             Loysn: %s                    -\n" +
-                "-                                          -\n" +
-                "-                                          -\n" +
-                "-                                          -\n" +
-                "- Git: %s                                  -\n" +
-                "-                                          -\n" +
-                "-                                          -\n" +
-                "--------------------------------------------";
-        template = String.format(template, solutionMasked, guessed);
-        String[] mainCanvas = template.split("\\n");
-        String[] hangingManSplitted = hangingMan.split("\\n");
-        for (int i = 0; i < mainCanvas.length; i++) {
-            mainCanvas[i] = mainCanvas[i].substring(0, 44) + (hangingManSplitted.length >= i ? hangingManSplitted[i] : "huh?");
+    static Set<Character> ConvertArrayListToSet(List<Character> characterList) {
+        Set<Character> result = new TreeSet();
+        for (int i = 0; i < characterList.size(); i++) {
+            result.add(characterList.get(i));
         }
-
-
-
-        String guiWithHangingMan = "";
-        for (String s: mainCanvas) {
-            guiWithHangingMan = guiWithHangingMan + s + "\n";
-        }
-        return guiWithHangingMan;
+        return result;
     }
 }

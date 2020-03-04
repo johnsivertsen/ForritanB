@@ -21,6 +21,8 @@ public class Form implements IForm {
 
         textField = new JTextField();
         textArea = new JTextArea();
+
+        Main.integerArray
     }
 
     public void show() {

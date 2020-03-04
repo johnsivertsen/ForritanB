@@ -35,7 +35,7 @@ public class DonutBoard extends JPanel {
         g2d.setStroke(new BasicStroke(1));
         g2d.setColor(Color.gray);
 
-        for (double deg = 0; deg < 360; deg += 5) {
+        for (double deg = 0; deg < 360; deg += 15) {
             AffineTransform at
                     = AffineTransform.getTranslateInstance(w/2, h/2);
             at.rotate(Math.toRadians(deg));
