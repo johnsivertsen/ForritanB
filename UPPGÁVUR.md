@@ -181,6 +181,8 @@ Loopa gjøgnum listan og skriva upplýsingarnr út.
 
 ## EX020: Car klassi
 
+### Part 1
+
 Ger ein klassa sum umboðar ein bil.
 
 Attributtar: Framleiðari, Model, Motorstødd, EigaraNavn, Ferð // Sí https://www.w3schools.com/java/java_class_attributes.asp
@@ -204,6 +206,18 @@ Loopa síðan gjøgnum listan og skriva upplýsingarnr út vha toString();
 Kalla bremsa() á allar bilarnar.
 
 Loopa síðan gjøgnum listan og skriva upplýsingarnr út vha toString();
+
+### Part 2
+
+Ger Framleiðari klassa.
+
+Attributtar: Navn, Bústaður
+
+Metodur: framleið() ið returnar ein bil. // Sí https://www.w3schools.com/java/java_methods_param.asp
+
+Ger 3 framleiðari objektir.
+
+Skift "new Car()" køllini út við t.d. bmw.framleið() køll.
 
 ### Eyka 
 
