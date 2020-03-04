@@ -205,3 +205,25 @@ Kalla bremsa() á allar bilarnar.
 
 Loopa síðan gjøgnum listan og skriva upplýsingarnr út vha toString();
 
+### Eyka 
+
+Ger metodu: SpeedUp()
+* Skal økja ferð við 10 fyri hvørt kall.
+
+Ger metodu: SlowDown()
+* Skal minka ferð við 20 fyri hvørt kall.
+
+Fer skal ikki kunna fara niður um 0 ella uppum 200.
+
+Ger kotu ið demonstrerar at hetta riggar.
+
+Ger klassa Person við ArrayList\<Car\> attributti. (Tvs. persónurin eigur bilarnar).
+
+Stovna 5 persónar.
+
+Stovna 10 bilar og fordeil teir millum persónarnar.
+
+Í Person.toString, skriva út hvørjar bilar persónurin eigur.
+
+Ger kotu ið demonstrerar at hetta riggar.
+ 
