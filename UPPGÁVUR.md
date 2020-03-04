@@ -178,3 +178,30 @@ Ger 3 objektir.
 Goym í einum ArrayList.
 
 Loopa gjøgnum listan og skriva upplýsingarnr út. 
+
+## EX020: Car klassi
+
+Ger ein klassa sum umboðar ein bil.
+
+Attributtar: Framleiðari, Model, Motorstødd, EigaraNavn, Ferð // Sí https://www.w3schools.com/java/java_class_attributes.asp
+
+Ger 3 objektir.
+
+Goym í einum ArrayList.
+
+Loopa gjøgnum listan og skriva upplýsingarnr út vha toString();
+
+Ger metodur: koyr, bremsa                                       // Sí https://www.w3schools.com/java/java_class_methods.asp
+
+Um Koyr verður kallað, skal Ferð setast til 50
+
+Um Bremsa verður kallað, skal Ferð setast til 0
+
+Kalla koyr() á allar bilarnar.
+
+Loopa síðan gjøgnum listan og skriva upplýsingarnr út vha toString();
+
+Kalla bremsa() á allar bilarnar.
+
+Loopa síðan gjøgnum listan og skriva upplýsingarnr út vha toString();
+
