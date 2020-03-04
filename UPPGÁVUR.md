@@ -132,4 +132,49 @@ Skeiv git: 4
 Funktión signatur:
 ```static String getGUI(String solution, ArrayList<Character> guesses)```
 
+## Skift GetGUI út í johnsivertsen/ForritanB/HangingMan
 
+Tak tí GetGUI ið tú hevur gjørt, og erstatta ta sum er í HangingMan hjá GitHub hjá mær (John).
+Úrslitið skal vera at spælið fungerar uppá akkurát sama máta. Einasti munurin er tað sum verður víst er annarleiðis.
+
+Hjálpifunktiónir til at konvertera millum ArrayList og Set:
+
+```
+    static ArrayList<Character> ConvertSetToArrayList(Set<Character> characterSet) {
+        ArrayList<Character> result = new ArrayList();
+        Iterator<Character> iterator = characterSet.iterator();
+        while (iterator.hasNext()) {
+            result.add(iterator.next());
+        }
+        return result;
+    }
+
+    static Set<Character> ConvertArrayListToSet(List<Character> characterList) {
+        Set<Character> result = new TreeSet();
+        for (int i = 0; i < characterList.size(); i++) {
+            result.add(characterList.get(i))
+        }
+        return result;
+    }
+    
+```
+
+## Eyka
+
+* Ger so at GuessGenerator lesur frá txt fílu frá diskinum
+* Ger tað gjørligt at broyta tal av max gitum
+* Vís bara skeiv git undir "Git"
+* Ger so at steðgað spæl kann takast uppaftur aftaná restart
+
+
+## EX019: Telefon klassi
+
+Ger ein klassa sum umboðar eina telefon.
+
+Skal innihalda Framleiðara, Model, Skermstødd, EigaraNavn
+
+Ger 3 objektir.
+
+Goym í einum ArrayList.
+
+Loopa gjøgnum listan og skriva upplýsingarnr út. 
