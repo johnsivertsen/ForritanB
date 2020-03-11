@@ -241,3 +241,22 @@ Stovna 10 bilar og fordeil teir millum persónarnar.
 
 Ger kotu ið demonstrerar at hetta riggar.
  
+## EX021: Swing JFrame, JPanel og Timer
+
+Uppgávunar niðanfyri eru inspireraðar av tí sum vit hava gjøgnumgingið í http://zetcode.com/tutorials/javagamestutorial/
+Tvs. at so gott sum allar uppgávurnar kunnu loysast við at granska kotuna á zetcode.com og yvirføra tað.
+
+Commit og push millum hvørja uppgávu.
+
+1) Ger ein tóman svartan skerm á stødd 400x300 pixels vha klassum ið arva (extend) frá JFrame og JPanel.
+
+2) Overrida void paintComponent(Graphics g) í JPanel sub-klassanum. og ger egna tekni metodu ið teknar ein gulan tekst á skermin, stødd 14pt og centreraðan bæði vertikalt og horizontalt.
+
+3) Broyt 2) til at tekna núvernadi klokkuslett vha t.d. fylgjandi:
+
+```
+    Date d = new Date();
+    String dateString = d.toString();
+```
+    
+4) Ger timara ið verður triggaður 1 ferð um sekundið á JPanel. Hvørja fer hann verður triggaður skal hann kalla repaint() metoduna í JPanel.
