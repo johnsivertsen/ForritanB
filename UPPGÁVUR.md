@@ -259,4 +259,6 @@ Commit og push millum hvørja uppgávu.
     String dateString = d.toString();
 ```
     
-4) Ger timara ið verður triggaður 1 ferð um sekundið á JPanel. Hvørja fer hann verður triggaður skal hann kalla repaint() metoduna í JPanel.
+4) Ger timara ið verður triggaður 10. hvørt sekund á JPanel. Hvørja fer hann verður triggaður skal hann kalla repaint() metoduna í JPanel.
+
+5) Ger ein KeyListener a la TAdapter í zetcode. Ger soleiðis at hvørja fer ein tastur verður trýstur, at repaint() verður kallað.
