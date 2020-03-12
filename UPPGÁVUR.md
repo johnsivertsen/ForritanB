@@ -291,12 +291,23 @@ Commit og push millum hvørja uppgávu.
 
 ## EX022: DateTimeSprite
 
-1) Ger líka sum í EX021-1 eitt tómt vindeyga.
+1) Ger líka sum í EX021-1 eitt tómt vindeyga. Kalla klassan ið arvar (extends) frá JPanel fyri Board.
 
 2) Ger ein Sprite klassa ið umboðar eitt generelt skap og inniheldur generellar skaps attributtar (x, y, width, height)
 
 3) Ger ein DateTimeSprite klassa ið arvar (extends) frá Sprite. Hann skal hava eina getCurrentTime metodu ið returnerar ein _string_ við núverandi klokkusletti.
 
-4) Overrida paintComponent metoduna í JPanel subklassanum (Board t.d.) og tekna vha drawString tað sum getCurrentTime í DateTimeSprite returnerar. Positionera ovast í høgra horni.
+4) Overrida paintComponent metoduna í Board og tekna vha drawString tað sum getCurrentTime í DateTimeSprite returnerar. Positionera tekstin ovast í vinstra horni.
 
-5) Ger ein timara ið kallar refresh 1 fer per sekund á JPanel sub-klassan.
+5) Ger ein timara í Board klassanum ið kallar refresh 25 ferð per sekund. 
+
+6) Ger ein nýggjan klassa ið umboðar ein bólt ið eisini arvar (extends) frá Sprite. 
+
+    Ger eina move metodu ið verður kallað av timaranum í Board.
+    
+    Hvørja ferð move verður kallað, skal bólturin flyta seg 1 pixel niðureftir (x = x + 1). 
+    
+    Byrjunarpositiónin hjá bóltinum skal vera 50, 50. 
+    
+    Tekna bóltin vha g.fillArc(50, 50, 20, 20, 0, 360);
+
