@@ -263,3 +263,26 @@ Commit og push millum hvørja uppgávu.
 4) Ger timara ið verður triggaður 10. hvørt sekund á JPanel. Hvørja fer hann verður triggaður skal hann kalla repaint() metoduna í JPanel.
 
 5) Ger ein KeyListener a la TAdapter í zetcode. Ger soleiðis at hvørja fer ein tastur verður trýstur, at repaint() verður kallað.
+
+    Hint: fyri at eitt TAdaper objekt skal kunna kalla repaint á JPanel (ella Board subklassa), so má TAdapter hava eina referansu til JPanel.
+    Hetta kann gerast við at taka ein parametur við í konstruktaranum: 
+
+```
+    private class TAdapter extends KeyAdapter {
+        private final JPanel owner;
+
+        public TAdapter(JPanel owner) {
+            this.owner = owner;
+        }
+
+        @Override
+        public void keyReleased(KeyEvent e) {
+            owner.repaint();
+        }
+
+        @Override
+        public void keyPressed(KeyEvent e) {
+            owner.repaint();
+        }
+    }
+```
