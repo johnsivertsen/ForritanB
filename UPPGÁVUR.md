@@ -311,3 +311,6 @@ Commit og push millum hvørja uppgávu.
     
     Tekna bóltin vha g.fillArc(50, 50, 20, 20, 0, 360);
 
+7) Ger 10 bólt objektir og goym tey í einum ArrayList. Gev teimum ymsar x,y start positiónir. Kalla move og tekna bóltarnar, hvørja fer timarin í Board verður triggaður. 
+
+8) Gev bólt klassanum fleiri attributtar, so sum farvu, stødd, ferð, og brúka hesi í samband við flyting og tekning av bóltunum.
