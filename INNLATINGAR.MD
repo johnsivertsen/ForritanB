@@ -1,8 +1,8 @@
-# Avleveringar
+# Innlatingar
 
-## AVLEVERING01: CurrentTimeSprite
+## INNLATING01: CurrentTimeSprite
 
-Uppgávan skal avleverast í GitHub við at pusha í foldara ForritanB-XXX/AVLEVERING01 í egna github repository. Commit+pusha millum hvørt punkt.
+Uppgávan skal latast inn í GitHub við at pusha í foldara ForritanB-XXX/AVLEVERING01 í egna github repository. Commit+pusha millum hvørt punkt.
 
 1) Ger eitt tómt svart vindeyga á stødd 400x300 pixels vha klassum ið arva frá JFrame og JPanel. Kalla JPanel subklassan Board.
 
