@@ -31,3 +31,5 @@ Uppgávan skal avleverast í GitHub við at pusha í foldara ForritanB-XXX/AVLEV
     Skift hard kotaðu x, y virðini í uppgávu 2 út við tey nýggju, random genereraðu.
     
 6) Ger ein timara á Board klassan ið verður triggaður 1 ferð um sekundið. Hvørja fer hann verður triggaður skal hann kalla repaint() metoduna sum Board hevur atgongd til via sín super klassa JPanel.
+
+    Um alt annars er rætt, so skuldi tað gjørt at klokkuslettið verður refreshað 1 fer per sekund og sekundteljarin telur uppeftir.
